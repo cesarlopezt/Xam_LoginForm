@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginForm.App">
+    <Application.Resources>
+        <Style TargetType="StackLayout">
+            <Setter Property="BackgroundColor" Value="#3E3E58" />
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="White" />
+        </Style>
+    </Application.Resources>
+</Application>
