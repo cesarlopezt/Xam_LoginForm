@@ -4,18 +4,14 @@
              x:Class="LoginForm.MainPage">
 
     <StackLayout Padding="50">
-        <Grid HorizontalOptions="Center" Margin="0,0,0,50">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
-            </Grid.ColumnDefinitions>
+        <StackLayout Orientation="Horizontal" Margin="0,0,0,50">
             <Image Source="pin.png" Grid.Column="0" />
             <Label Text="Travel Around" FontSize="Title" FontAttributes="Bold" VerticalOptions="Center" Grid.Column="1"  />
-        </Grid>
+        </StackLayout>
         <Label Text="Username" FontSize="16"/>
-        <Entry x:Name="username" TextColor="White" Placeholder="Insert your username here..."  />
+        <Entry x:Name="usernameEntry" TextColor="White" Placeholder="Insert your username here..."  />
         <Label Text="Password" FontSize="16"/>
-        <Entry x:Name="password" TextColor="White" Placeholder="Insert your password here..." IsPassword="True" />
+        <Entry x:Name="passwordEntry" TextColor="White" Placeholder="Insert your password here..." IsPassword="True" />
         <Button Text="Login" BackgroundColor="#FD003A" CornerRadius="10" Margin="0,30,0,0" Clicked="OnLoginClicked"  />
 
         <Label Text="Start traveling with us!" FontSize="Small" HorizontalOptions="End" />

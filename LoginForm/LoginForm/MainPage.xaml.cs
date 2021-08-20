@@ -17,17 +17,17 @@ namespace LoginForm
 
         async void OnLoginClicked(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(username.Text))
+            if (string.IsNullOrEmpty(usernameEntry.Text))
             {
                 await DisplayAlert("Error", "Username shouldn't be empty!", "Ok");
             } 
-            else if (string.IsNullOrEmpty(password.Text)) 
+            else if (string.IsNullOrEmpty(passwordEntry.Text)) 
             {
                 await DisplayAlert("Error", "Password shouldn't be empty", "Ok");
             }
             else
             {
-                await DisplayAlert("Welcome back", $"Hi {username.Text}!", "Ok");
+                await DisplayAlert("Welcome back", $"Hi {usernameEntry.Text}!", "Ok");
             }
         }
     }
